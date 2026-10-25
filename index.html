@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basket Bros Arena</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <span class="brand-badge">BB</span>
+          <div>
+            <p class="eyebrow">Arcade</p>
+            <h1>Basket Bros Arena</h1>
+          </div>
+        </div>
+
+        <div class="hud">
+          <div class="stat-box">
+            <span class="label">Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div class="stat-box">
+            <span class="label">Combo</span>
+            <strong id="combo">x1</strong>
+          </div>
+          <div class="stat-box">
+            <span class="label">Time</span>
+            <strong id="timer">45</strong>
+          </div>
+        </div>
+      </header>
+
+      <main class="arena-wrap">
+        <canvas id="gameCanvas" width="960" height="600"></canvas>
+      </main>
+
+      <div class="controls">
+        <button id="startBtn">Start Game</button>
+        <p>Move: A / D or ← / → | Jump: W or ↑ | Shoot: click or space</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
